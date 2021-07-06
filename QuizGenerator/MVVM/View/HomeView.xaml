@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <TextBlock Text="Tests Designer" Foreground="White" FontSize="28" HorizontalAlignment="Left" Margin="10,0,0,20"></TextBlock>
+        <TextBlock Text="Quiz Designer" Foreground="White" FontSize="28" HorizontalAlignment="Left" Margin="10,0,0,20"></TextBlock>
         <StackPanel Orientation="Horizontal">
             <Border Width="400" Height="200">
                 <Border.Background>
