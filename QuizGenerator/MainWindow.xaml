@@ -47,9 +47,6 @@
                              Command="{Binding ExitCommand}"/>
             </StackPanel>
 
-            <TextBox HorizontalAlignment="Left" Grid.Column="1" Style="{StaticResource ModernTextBox}">
-            </TextBox>
-
             <ContentControl Grid.Column="1" Grid.Row="1" 
                             Margin="10"
                             Content="{Binding CurrentView}"/>
