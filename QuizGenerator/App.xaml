@@ -10,6 +10,7 @@
              <ResourceDictionary.MergedDictionaries>
                  <ResourceDictionary  Source="Theme/MenuButtonTheme.xaml"/>
                  <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+                 <ResourceDictionary Source="Theme/ButtonTheme.xaml"/>
              </ResourceDictionary.MergedDictionaries>
 
              <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
@@ -17,6 +18,10 @@
              </DataTemplate>
              <DataTemplate DataType="{x:Type viewModel:CreateViewModel}">
                  <view:CreateView />
+             </DataTemplate>
+
+             <DataTemplate DataType="{x:Type viewModel:CloseViewModel}">
+                 <view:CloseView />
              </DataTemplate>
 
         </ResourceDictionary>

@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <TextBlock Text="Tests Designer" Foreground="White" FontSize="28" HorizontalAlignment="Left" Margin="10,0,0,20"></TextBlock>
+        <TextBlock Text="Quiz Creator" Foreground="White" FontSize="28" HorizontalAlignment="Left" Margin="10,0,0,20" />
         <StackPanel Orientation="Horizontal">
             <Border Width="400" Height="200">
                 <Border.Background>
@@ -23,8 +23,15 @@
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="Get started today!" FontSize="28" Foreground="White" Margin="10"></TextBlock>
-                        <TextBlock Text="Write your own tests&#x0a;It's easy!" FontSize="28" Foreground="White" Margin="10"></TextBlock>
+                        <TextBlock Text="Create online quizzes" 
+                                   FontSize="28" Foreground="White"
+                                   HorizontalAlignment="Center">
+                            <TextBlock.Margin>10</TextBlock.Margin>
+                        </TextBlock>
+                        <TextBlock Text="Always wanted to make a quiz, but couldn't find an easy quiz creator to help you out? "
+                                   TextWrapping="Wrap" FontSize="28" 
+                                   Foreground="White" Margin="10"
+                                   TextAlignment="Justify" />
                     </StackPanel>
                 </Grid>
             </Border>
@@ -38,7 +45,71 @@
                         <GradientStop Color="#ffb73a" Offset="1" />
                     </LinearGradientBrush>
                 </Border.Background>
+                <Grid>
+                    <TextBlock Text="Playing and creating quizzes has never been more easy and fun with our quiz software!" 
+                               FontSize="20"
+                               VerticalAlignment="Center" 
+                               TextAlignment="Justify" 
+                               Foreground="White" 
+                               Margin="10" 
+                               TextWrapping="Wrap" />
+                </Grid>
             </Border>
+        </StackPanel>
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"></Setter>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="What our customers say" 
+                       Foreground="White" 
+                       FontSize="28" 
+                       HorizontalAlignment="Left" 
+                       Margin="10,10,0,20"/>
+            <StackPanel Orientation="Horizontal">
+                <Border Width="150" Height="150"
+                        Background="#844eff"
+                        CornerRadius="10"
+                        Margin="0">
+                    <TextBlock Text="Quiz Creator is very easy to use and allows us to manage our information in a more effective way." 
+                               FontSize="15"
+                               VerticalAlignment="Center" 
+                               Foreground="White" 
+                               Margin="10" 
+                               TextWrapping="Wrap" />
+                </Border>
+                <Border Width="150" Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10">
+                    <TextBlock Text="I highly recommend Quiz Creator and want to personally thank creator." 
+                               FontSize="15" 
+                               VerticalAlignment="Center" 
+                               Foreground="White" 
+                               Margin="10" 
+                               TextWrapping="Wrap" />
+                </Border>
+                <Border Width="150" Height="150"
+                        Background="#4eff91"
+                        CornerRadius="10">
+                    <TextBlock Text="Quiz is fun and easy to use with a great support team." 
+                               FontSize="15" 
+                               VerticalAlignment="Center" 
+                               Foreground="White" 
+                               Margin="10" 
+                               TextWrapping="Wrap" />
+                </Border>
+                <Border Width="150" Height="150"
+                        Background="#ecff4e"
+                        CornerRadius="10">
+                    <TextBlock Text="After just 24 hours of implementing our very first quiz we generated 285 leads." 
+                               FontSize="15" 
+                               VerticalAlignment="Center" 
+                               Foreground="White" 
+                               Margin="10" 
+                               TextWrapping="Wrap" />
+                </Border>
+            </StackPanel>
         </StackPanel>
     </StackPanel>
 </UserControl>
