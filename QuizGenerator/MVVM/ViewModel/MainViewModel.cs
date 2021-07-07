@@ -5,15 +5,16 @@ using QuizGenerator.MVVM.View;
 
 namespace QuizGenerator.MVVM.ViewModel
 {
-    class MainViewModel: ObservableObject
+    class MainViewModel : ObservableObject
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand CreateViewCommand { get; set; }
-        public RelayCommand ExitCommand { get; set; }
+        public RelayCommand CloseViewCommand { get; set; }
         public RelayCommand MoveCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public CreateViewModel CreateVM { get; set; }
+        public CloseViewModel CloseVM { get; set; }
 
         private object _currentView;
 
@@ -31,6 +32,7 @@ namespace QuizGenerator.MVVM.ViewModel
         {
             HomeVM = new HomeViewModel();
             CreateVM = new CreateViewModel();
+            CloseVM = new CloseViewModel();
             CurrentView = HomeVM;
 
             HomeViewCommand =new RelayCommand((o) =>
@@ -43,9 +45,9 @@ namespace QuizGenerator.MVVM.ViewModel
                 CurrentView = CreateVM;
             });
 
-            ExitCommand = new RelayCommand((o) =>
+            CloseViewCommand = new RelayCommand((o) =>
             {
-                Application.Current.Shutdown();
+                CurrentView = CloseVM;
             });
 
             MoveCommand = new RelayCommand((o) =>

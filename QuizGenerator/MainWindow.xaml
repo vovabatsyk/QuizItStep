@@ -44,7 +44,7 @@
                              Command="{Binding CreateViewCommand}"/>
                 <RadioButton Content="Edit" Style="{StaticResource MenuButtonTheme}"/>
                 <RadioButton Content="Close" Style="{StaticResource MenuButtonTheme}" 
-                             Command="{Binding ExitCommand}"/>
+                             Command="{Binding CloseViewCommand}"/>
             </StackPanel>
 
             <ContentControl Grid.Column="1" Grid.Row="1" 
